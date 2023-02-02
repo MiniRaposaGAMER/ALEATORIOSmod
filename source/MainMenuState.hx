@@ -33,8 +33,8 @@ class MainMenuState extends MusicBeatState
 	private var camAchievement:FlxCamera;
 	
 	var optionShit:Array<String> = [
-		'story_mode',
-		'mods',
+		'vsidk',
+		'yungdside',
 		'freeplay',
 		'awards',
 		'credits',
@@ -235,11 +235,11 @@ class MainMenuState extends MusicBeatState
 
 								switch (daChoice)
 								{
-									case 'story_mode':
+									case 'vsidk':
 										MusicBeatState.switchState(new VsIdkState());
 									case 'freeplay':
 										MusicBeatState.switchState(new FreeplayState());
-									case 'mods':
+									case 'yungdside':
 										MusicBeatState.switchState(new YungDsideState());
 									case 'awards':
 										MusicBeatState.switchState(new AchievementsMenuState());
