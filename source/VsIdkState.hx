@@ -92,6 +92,8 @@ class VsIdkState extends MusicBeatState
 		magenta.antialiasing = ClientPrefs.globalAntialiasing;
 		magenta.color = 0xFFfd719b;
 		add(magenta);
+
+		FlxG.sound.playMusic(Paths.music('idk'), 0);
 		
 		// magenta.scrollFactor.set();
 
@@ -195,7 +197,7 @@ class VsIdkState extends MusicBeatState
 			{
 				selectedSomethin = true;
 				FlxG.sound.play(Paths.sound('cancelMenu'));
-				MusicBeatState.switchState(new TitleState());
+				MusicBeatState.switchState(new MainMenuState());
 			}
 
 			if (controls.ACCEPT)
